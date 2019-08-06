@@ -1,4 +1,5 @@
 const path = require('path');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -8,4 +9,10 @@ module.exports = {
         filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, 'dist'),
     },
+    plugins: [
+        new HTMLWebpackPlugin({
+            filename: 'index.html',
+            template: 'src/client/html/index.html',
+        }),
+    ]
 }
