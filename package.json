@@ -1,0 +1,26 @@
+{
+  "name": "scape",
+  "version": "1.0.0",
+  "description": "Attempt at an io game.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yinghaoawang/scape.git"
+  },
+  "author": "yinghao wang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yinghaoawang/scape/issues"
+  },
+  "homepage": "https://github.com/yinghaoawang/scape#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1",
+    "socket.io": "^2.2.0",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
+  }
+}
