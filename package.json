@@ -2,7 +2,7 @@
   "name": "scape",
   "version": "1.0.0",
   "description": "Attempt at an io game.",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
