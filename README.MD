@@ -2,8 +2,5 @@
 Attempt at an io game.
 
 ## Resources:
-https://victorzhou.com/blog/build-an-io-game-part-1/
-
-https://www.gabrielgambetta.com/client-side-prediction-server-reconciliation.html
-
-http://www.html5gamedevs.com/topic/38597-server-sided-map-with-nodejs/
+[Gabriel Gambetta's Fast-Paced Multiplayer tutorial series](https://www.gabrielgambetta.com/client-server-game-architecture.html)
+[Victor Zhou's How to Build a Multiplayer (.io) Web Game](https://victorzhou.com/blog/build-an-io-game-part-1/)
