@@ -1,4 +1,5 @@
 import { connect, play } from './networking';
+import Constants from '../shared/constants';
 /*
 import { startRendering, stopRendering } from './render';
 import { startCapturingInput, stopCapturingInput } from './input';
@@ -12,7 +13,6 @@ import './css/main.css';
 const playMenu = document.getElementById('play-menu');
 const playButton = document.getElementById('play-button');
 const usernameInput = document.getElementById('username-input');
-console.log('hello');
 
 Promise.all([
     console.log(connect()),
