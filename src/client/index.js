@@ -1,9 +1,9 @@
 import { connect, play } from './networking';
-import Constants from '../shared/constants';
-/*
-import { startRendering, stopRendering } from './render';
-import { startCapturingInput, stopCapturingInput } from './input';
 import { downloadAssets } from './assets';
+import Constants from '../shared/constants';
+import { startRendering, stopRendering } from './render';
+/*
+import { startCapturingInput, stopCapturingInput } from './input';
 import { initState } from './state';
 import { setLeaderboardHidden } from './leaderboard';
 */
@@ -15,11 +15,12 @@ const playButton = document.getElementById('play-button');
 const usernameInput = document.getElementById('username-input');
 
 Promise.all([
-    console.log(connect()),
-    //downloadAssets(),
+    connect(),
+    downloadAssets(),
 ]).then(() => {
     playMenu.classList.remove('hidden');
     usernameInput.focus();
+        startRendering();
     /*
     playButton.onclick = () => {
         // Play!
