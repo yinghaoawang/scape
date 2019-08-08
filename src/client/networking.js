@@ -21,6 +21,11 @@ export const connect = (onGameOver) => {
     });
 };
 
-export function play() {
-    return 5;
-}
+export const play = username => {
+    socket.emit(Constants.MSG_TYPES.JOIN_GAME, username);
+};
+
+export const updateDirection = dir => {
+    socket.emit(Constants.MSG_TYPES.INPUT, dir);
+};
+
