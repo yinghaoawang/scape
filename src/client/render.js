@@ -6,11 +6,13 @@ const Constants = require('../shared/constants');
 const canvas = document.getElementById('game-canvas');
 const context = canvas.getContext('2d');
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.width = 600;
+canvas.height = 400;
 
 function render() {
     const { trees } = getCurrentState();
+
+    renderBackground();
 
     trees.forEach(renderTree);
 }
@@ -24,6 +26,11 @@ function renderTree(tree) {
         width,
         height,
     );
+}
+
+function renderBackground() {
+    context.fillStyle = "#DDDDDD";
+    context.fillRect(0, 0, canvas.width, canvas.height);
 }
 
 let renderInterval = null;

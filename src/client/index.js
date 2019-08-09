@@ -20,16 +20,13 @@ Promise.all([
 ]).then(() => {
     playMenu.classList.remove('hidden');
     usernameInput.focus();
-        startRendering();
-    /*
     playButton.onclick = () => {
         // Play!
         play(usernameInput.value);
         playMenu.classList.add('hidden');
-        initState();
-        startCapturingInput();
+        //initState();
+        //startCapturingInput();
         startRendering();
-        setLeaderboardHidden(false);
+        //setLeaderboardHidden(false);
     };
-    */
 });
